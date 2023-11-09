@@ -1,0 +1,31 @@
+{
+	"name": "X13(12) Auto | Modern Warfare II",
+	"authors": 
+	[
+		{
+			"name": "Infinity Ward", 
+			"role": "Modern Warfare II"
+		},
+		{
+			"name": "Lutzz", 
+			"role": "CSGO_COD-RIG"
+		},
+		{
+			"name": "Nekyo-ko", 
+			"role": "Sounds"
+		},
+		{
+			"name": "Scobalula", 
+			"role": "Greyhound"
+		},
+		{
+			"name": "Stomatolog", 
+			"role": "Ripping Assets"
+		},
+		{
+			"name": "ZaihnY", 
+			"role": "Porting"
+		}
+	],
+	"replacement": "pist_glock"
+}
