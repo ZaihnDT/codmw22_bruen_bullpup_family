@@ -1,0 +1,31 @@
+{
+	"name": "M7 Bayonet | Modern Warfare XIX [T]",
+	"authors": 
+	[
+		{
+			"name": "ZaihnY", 
+			"role": "mod"
+		},
+		{
+			"name": "teejlesdoodles", 
+			"role": "bayonet model"
+		},
+		{
+			"name": "Lutzz", 
+			"role": "CSGO_COD-RIG"
+		},
+		{
+			"name": "ma_rv, Viper", 
+			"role": "fastvalvematerial, textures"
+		},
+		{
+			"name": "Scobalula", 
+			"role": "Greyhound"
+		},
+		{
+			"name": "Stomatolog", 
+			"role": "Knife Base"
+		}
+	],
+	"replacement": "knife_default_t"
+}
