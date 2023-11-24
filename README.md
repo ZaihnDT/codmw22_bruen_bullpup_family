@@ -1,6 +1,24 @@
 # The main addon description is written below:
 
-**Big shotout to [url=https://steamcommunity.com/id/ma_rv]Ma_rv[/url] for help with tools and [url=https://steamcommunity.com/id/diglyconat]Stomatolog[/url] for extracting stuff for me.**
+**Things to check out:**
+
++ CS:GO Ports of all Modern Warfare 2019 Weapons - [Click](https://github.com/crazyslavmodder/CSGO-MW2019-Weapons-RELEASE)
++ CS:GO/SO Ports of Black Ops:Cold War Weapons - [Click](https://github.com/ZaihnDT/MIGI-BOCW-Weapons)
++ Modern Warfare Base
++ Modern Warfare Base Materials Tool - [Click](https://github.com/mushroom-guy/mwb-materials)
++ ARC9, a successor to the ArcCW - [Click](https://github.com/HaodongMo/ARC-9)
++ ARC9 Call of Duty: Modern Warfare 2019 - [Click](https://github.com/curlySparkle/ARC9-COD2019)
++ ARC9 Call of Duty: Modern Warfare Shared - [Click](https://github.com/CurlySparkle/ARC9_Cod2019_Shared)
+
+**Credits and shoutouts:**
+
++ Infinity Ward/Treyarch/Sledgehammer - Call Of Duty Modern Warfare (XIX, II, III) Assets;
++ Scobalula - Greyhound, Parazyte;
++ Ma_rv, Mushroom Guy - Textures to VTF Converters;
++ Stomatolog, Stefano - Ripping Assets;
++ Stomatolog, Lutzz - Help with CS:GO/CS:SO ports;
++ Viper, Mushroom Guy - Help with MW Base ports;
++ Arctic, Twilight Sparkle - Help with ARC-9 COD2019 Pack ports.
 
 ### This attachment pack adds all STB 556, MX9 and HCR 56 parts to MW19 AUG. You can only use those together, please don't try to break this system. You can use attachments such as Lasers, Grips, Sights and Muzzle Devices from MWXIX though.
 
