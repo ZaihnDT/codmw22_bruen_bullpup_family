@@ -4,7 +4,7 @@
 
 + CS:GO Ports of all Modern Warfare 2019 Weapons - [Click](https://github.com/crazyslavmodder/CSGO-MW2019-Weapons-RELEASE)
 + CS:GO/SO Ports of Black Ops:Cold War Weapons - [Click](https://github.com/ZaihnDT/MIGI-BOCW-Weapons)
-+ Public Source Files Modern Warfare, Useful! - [Click](https://github.com/One-Trick-Viper/Source-Files-MW-Public)
++ Public Modern Warfare Files for Source Engine, Useful! - [Click](https://github.com/One-Trick-Viper/Source-Files-MW-Public)
 + Modern Warfare Base Materials Tool - [Click](https://github.com/mushroom-guy/mwb-materials)
 + ARC9, a successor to the ArcCW - [Click](https://github.com/HaodongMo/ARC-9)
 + ARC9 Call of Duty: Modern Warfare 2019 - [Click](https://github.com/curlySparkle/ARC9-COD2019)
