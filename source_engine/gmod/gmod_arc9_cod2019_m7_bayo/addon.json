@@ -1,0 +1,14 @@
+{
+	"title": "[ARC9] M7 Bayonet | Combat Knife Animations",
+	"type": "weapon",
+	"tags": [
+		"roleplay",
+		"fun"
+	],
+	"ignore" :
+	[
+	"*.psd",
+	"*.vcproj",
+	"*.svn*"
+	]
+}
