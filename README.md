@@ -1,10 +1,6 @@
-# codmw22_bruen_bullpup_family
-AUGs from MWII
-b]This attachment pack adds all STB 556, MX9 and HCR 56 parts to MW19 AUG. [i]You can only use those together[/i] (why would you want another assets mashup lol). You can use attachments such as Lasers, Grips, Sights and Muzzle Devices from MW19 though.
+**This attachment pack adds all STB 556, MX9 and HCR 56 parts to MW19 AUG. You can only use those together, please don't try to break this system. You can use attachments such as Lasers, Grips, Sights and Muzzle Devices from MWXIX though.
 
-My laptop can't really handle MW2, nor can I buy it legally, so I have to request stuff despite me having access to needed tools, don't bother asking for things please.
-
-Big shotout to [url=https://steamcommunity.com/id/ma_rv]Ma_rv[/url] for help with tools and [url=https://steamcommunity.com/id/diglyconat]Stomatolog[/url] for extracting stuff for me.[/b]
+Big shotout to [url=https://steamcommunity.com/id/ma_rv]Ma_rv[/url] for help with tools and [url=https://steamcommunity.com/id/diglyconat]Stomatolog[/url] for extracting stuff for me.***
 
 ---
 
@@ -12,13 +8,13 @@ Big shotout to [url=https://steamcommunity.com/id/ma_rv]Ma_rv[/url] for help wit
 
 ---
 
-[b]The STB 556 is a weapon featured in Call of Duty: Modern Warfare 2 (2022), it is one of the Assault Rifles available in the game.
+**The STB 556 is a weapon featured in Call of Duty: Modern Warfare 2 (2022), it is one of the Assault Rifles available in the game.
 
 The STB 556 was released in Modern Warfare 2 with the launch of the game on October 28, 2022, and on Warzone 2 when the game releases on November 16, 2022, along with Season One.
 
 The design of the STB 556 is based the real-life gun AUG A3.
 
-The STB 556 is part of the Bruen Bullpup Platform family of weapons.[/b]
+The STB 556 is part of the Bruen Bullpup Platform family of weapons.**
 
 ---
 
@@ -26,13 +22,13 @@ The STB 556 is part of the Bruen Bullpup Platform family of weapons.[/b]
 
 ---
 
-[b]The MX9 (AUG) is a weapon featured in Call of Duty: Modern Warfare 2 (2022), it is one of the SMGs available in the game.
+**The MX9 (AUG) is a weapon featured in Call of Duty: Modern Warfare 2 (2022), it is one of the SMGs available in the game.
 
 The MX9 (AUG) was released in Modern Warfare 2 with the launch of the game on October 28, 2022, and on Warzone 2 when the game releases on November 16, 2022, along with Season One.
 
 The design of the MX9 (AUG) is based the real-life gun Steyr AUG Para.
 
-The MX9 (AUG) is part of the Bruen Bullpup Platform family of weapons.[/b]
+The MX9 (AUG) is part of the Bruen Bullpup Platform family of weapons.**
 
 ---
 
@@ -40,12 +36,12 @@ The MX9 (AUG) is part of the Bruen Bullpup Platform family of weapons.[/b]
 
 ---
 
-[b]The HCR 56 is a weapon featured in Call of Duty: Modern Warfare 2 (2022), it is one of the LMGs available in the game.
+**The HCR 56 is a weapon featured in Call of Duty: Modern Warfare 2 (2022), it is one of the LMGs available in the game.
 
 The HCR 56 was released in Modern Warfare 2 with the launch of the game on October 28, 2022, and on Warzone 2 when the game releases on November 16, 2022, along with Season One.
 
 The design of the HCR 56 is based the real-life gun Steyr AUG HBAR.
 
-The HCR 56 is part of the Bruen Bullpup Platform family of weapons.[/b]
+The HCR 56 is part of the Bruen Bullpup Platform family of weapons.**
 
 ---
