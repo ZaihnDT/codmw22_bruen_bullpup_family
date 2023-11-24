@@ -8,7 +8,7 @@ Big shotout to [url=https://steamcommunity.com/id/ma_rv]Ma_rv[/url] for help wit
 
 ---
 
-[img]https://steamuserimages-a.akamaihd.net/ugc/1895479671965672148/6156385F55F636F9006E5E8DD0DEEDB7FCE550D5/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false[/img]
+![STB Image here](https://steamuserimages-a.akamaihd.net/ugc/1895479671965672148/6156385F55F636F9006E5E8DD0DEEDB7FCE550D5/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false)
 
 ---
 
@@ -22,7 +22,7 @@ The STB 556 is part of the Bruen Bullpup Platform family of weapons.[/b]
 
 ---
 
-![MX9 Image here](https://steamuserimages-a.akamaihd.net/ugc/1895479895312527365/03CA43B16A8AE307B85E56F86B7D41EECAEB7376/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false) "MX9")
+![MX9 Image here](https://steamuserimages-a.akamaihd.net/ugc/1895479895312527365/03CA43B16A8AE307B85E56F86B7D41EECAEB7376/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false)
 
 ---
 
@@ -36,7 +36,7 @@ The MX9 (AUG) is part of the Bruen Bullpup Platform family of weapons.[/b]
 
 ---
 
-[img]https://steamuserimages-a.akamaihd.net/ugc/1895479895315270005/2E0D71F17AE0641290EA18410748D5A7C87C6F88/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false[/img]
+![HCR Image here](https://steamuserimages-a.akamaihd.net/ugc/1895479895315270005/2E0D71F17AE0641290EA18410748D5A7C87C6F88/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false)
 
 ---
 
