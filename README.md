@@ -22,7 +22,7 @@ The STB 556 is part of the Bruen Bullpup Platform family of weapons.[/b]
 
 ---
 
-![MX9 Image here]([/assets/images/san-juan-mountains.jpg](https://steamuserimages-a.akamaihd.net/ugc/1895479895312527365/03CA43B16A8AE307B85E56F86B7D41EECAEB7376/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false) "MX9")
+![MX9 Image here](https://steamuserimages-a.akamaihd.net/ugc/1895479895312527365/03CA43B16A8AE307B85E56F86B7D41EECAEB7376/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false) "MX9")
 
 ---
 
