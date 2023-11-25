@@ -65,3 +65,12 @@
 **The HCR 56 is part of the Bruen Bullpup Platform family of weapons.**
 
 ---
+
+## Other Releases Include:
+
++ Multiple items_game.txt Includer Add-ons
++ Source Offensive Replacement Add-ons
++ Modern Warfare Base Attachment Packs
++ ARC9 Cod2019 Pack Additions
+
+---
