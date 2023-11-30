@@ -1,0 +1,31 @@
+{
+	"name": "3D-Printed X12 | Modern Warfare III",
+	"authors": 
+	[
+		{
+			"name": "Infinity Ward", 
+			"role": "Modern Warfare III"
+		},
+		{
+			"name": "Lutzz", 
+			"role": "CSGO_COD-RIG"
+		},
+		{
+			"name": "Nekyo-ko", 
+			"role": "Sounds"
+		},
+		{
+			"name": "Scobalula", 
+			"role": "Greyhound"
+		},
+		{
+			"name": "Stomatolog", 
+			"role": "Ripping Xanims"
+		},
+		{
+			"name": "ZaihnY", 
+			"role": "Porting"
+		}
+	],
+	"replacement": "pist_glock"
+}
