@@ -63,13 +63,13 @@
 	
 }
 
-"p24_pi_golf17_inspect_01"
+"p12_pi_mike93_inspect_01"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
 	"pitch"			"100"
 	"soundlevel"  		"SNDLVL_65dB"
-	"wave"			"weapons/mw22/golf17/p24_pi_golf17_inspect_raise.wav"
+	"wave"			"weapons/mw23/mike93/p12_pi_mike93_inspect_raise.wav"
 	"hrtf_follow"		"1"
 	"soundentry_version" "2"
 	"operator_stacks"
@@ -117,13 +117,13 @@
 	}
 }
 
-"p24_pi_golf17_inspect_03"
+"p12_pi_mike93_inspect_03"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
 	"pitch"			"100"
 	"soundlevel"  		"SNDLVL_65dB"
-	"wave"			"weapons/mw22/golf17/p24_pi_golf17_inspect_mag_out.wav"
+	"wave"			"weapons/mw23/mike93/p12_pi_mike93_inspect_magout.wav"
 	"hrtf_follow"		"1"
 	"soundentry_version" "2"
 	"operator_stacks"
@@ -144,13 +144,13 @@
 	}
 }
 
-"p24_pi_golf17_inspect_04"
+"p12_pi_mike93_inspect_04"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
 	"pitch"			"100"
 	"soundlevel"  		"SNDLVL_65dB"
-	"wave"			"weapons/mw22/golf17/p24_pi_golf17_inspect_mag_hit.wav"
+	"wave"			"weapons/mw23/mike93/p12_pi_mike93_inspect_maghit.wav"
 	"hrtf_follow"		"1"
 	"soundentry_version" "2"
 	"operator_stacks"
@@ -171,13 +171,13 @@
 	}
 }
 
-"p24_pi_golf17_inspect_05"
+"p12_pi_mike93_inspect_05"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
 	"pitch"			"100"
 	"soundlevel"  		"SNDLVL_65dB"
-	"wave"			"weapons/mw22/golf17/p24_pi_golf17_inspect_mag_in.wav"
+	"wave"			"weapons/mw23/mike93/p12_pi_mike93_inspect_magin.wav"
 	"hrtf_follow"		"1"
 	"soundentry_version" "2"
 	"operator_stacks"
@@ -198,13 +198,13 @@
 	}
 }
 
-"p24_pi_golf17_inspect_06"
+"p12_pi_mike93_inspect_06"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
 	"pitch"			"100"
 	"soundlevel"  		"SNDLVL_65dB"
-	"wave"			"weapons/mw22/golf17/p24_pi_golf17_inspect_slide_pull.wav"
+	"wave"			"weapons/mw23/mike93/p12_pi_mike93_inspect_slidepull.wav"
 	"hrtf_follow"		"1"
 	"soundentry_version" "2"
 	"operator_stacks"
@@ -225,13 +225,13 @@
 	}
 }
 
-"p24_pi_golf17_inspect_07"
+"p12_pi_mike93_inspect_07"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
 	"pitch"			"100"
 	"soundlevel"  		"SNDLVL_65dB"
-	"wave"			"weapons/mw22/golf17/p24_pi_golf17_inspect_slide_release.wav"
+	"wave"			"weapons/mw23/mike93/p12_pi_mike93_inspect_slideforward.wav"
 	"hrtf_follow"		"1"
 	"soundentry_version" "2"
 	"operator_stacks"
@@ -252,13 +252,13 @@
 	}
 }
 
-"p24_pi_golf17_inspect_08"
+"p12_pi_mike93_inspect_08"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
 	"pitch"			"100"
 	"soundlevel"  		"SNDLVL_65dB"
-	"wave"			"weapons/mw22/golf17/p24_pi_golf17_inspect_smack_butt.wav"
+	"wave"			"weapons/mw23/mike93/p12_pi_mike93_inspect_slidehit.wav"
 	"hrtf_follow"		"1"
 	"soundentry_version" "2"
 	"operator_stacks"
@@ -279,13 +279,13 @@
 	}
 }
 
-"p24_pi_golf17_inspect_09"
+"p12_pi_mike93_inspect_09"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
 	"pitch"			"100"
 	"soundlevel"  		"SNDLVL_65dB"
-	"wave"			"weapons/mw22/golf17/p24_pi_golf17_inspect_end.wav"
+	"wave"			"weapons/mw23/mike93/p12_pi_mike93_inspect_end.wav"
 	"hrtf_follow"		"1"
 	"soundentry_version" "2"
 	"operator_stacks"
@@ -360,13 +360,13 @@
 	}
 }
 
-"p24_pi_golf17_reload_03"
+"p12_pi_mike93_reload_03"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
 	"pitch"			"100"
 	"soundlevel"  		"SNDLVL_65dB"
-	"wave"			"weapons/mw22/golf17/p24_pi_golf17_reload_mag_out.wav"
+	"wave"			"weapons/mw23/mike93/p12_pi_mike93_reload_empty_magout.wav"
 	"hrtf_follow"		"1"
 	"soundentry_version" "2"
 	"operator_stacks"
@@ -387,13 +387,13 @@
 	}
 }
 
-"p24_pi_golf17_reload_04"
+"p12_pi_mike93_reload_04"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
 	"pitch"			"100"
 	"soundlevel"  		"SNDLVL_65dB"
-	"wave"			"weapons/mw22/golf17/p24_pi_golf17_reload_mag_hit.wav"
+	"wave"			"weapons/mw23/mike93/p12_pi_mike93_reload_empty_maghit.wav"
 	"hrtf_follow"		"1"
 	"soundentry_version" "2"
 	"operator_stacks"
@@ -414,13 +414,13 @@
 	}
 }
 
-"p24_pi_golf17_reload_045"
+"p12_pi_mike93_reload_045"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
 	"pitch"			"100"
 	"soundlevel"  		"SNDLVL_65dB"
-	"wave"			"weapons/mw22/golf17/p24_pi_golf17_reload_mag_in.wav"
+	"wave"			"weapons/mw23/mike93/p12_pi_mike93_reload_empty_magin.wav"
 	"hrtf_follow"		"1"
 	"soundentry_version" "2"
 	"operator_stacks"
@@ -441,13 +441,13 @@
 	}
 }
 
-"p24_pi_golf17_reload_05"
+"p12_pi_mike93_reload_05"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
 	"pitch"			"100"
 	"soundlevel"  		"SNDLVL_65dB"
-	"wave"			"weapons/mw22/golf17/p24_pi_golf17_reload_end.wav"
+	"wave"			"weapons/mw23/mike93/p12_pi_mike93_reload_empty_end.wav"
 	"hrtf_follow"		"1"
 	"soundentry_version" "2"
 	"operator_stacks"
@@ -495,13 +495,13 @@
 	}
 }
 
-"p24_pi_golf17_reload_empty_02"
+"p12_pi_mike93_reload_empty_02"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
 	"pitch"			"100"
 	"soundlevel"  		"SNDLVL_65dB"
-	"wave"			"weapons/mw22/golf17/p24_pi_golf17_reload_empty_mag_out.wav"
+	"wave"			"weapons/mw23/mike93/p12_pi_mike93_reload_empty_magout.wav"
 	"hrtf_follow"		"1"
 	"soundentry_version" "2"
 	"operator_stacks"
@@ -522,13 +522,13 @@
 	}
 }
 
-"p24_pi_golf17_reload_empty_03"
+"p12_pi_mike93_reload_empty_03"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
 	"pitch"			"100"
 	"soundlevel"  		"SNDLVL_65dB"
-	"wave"			"weapons/mw22/golf17/p24_pi_golf17_reload_empty_grab.wav"
+	"wave"			"weapons/mw23/mike93/p12_pi_mike93_reload_empty_grab.wav"
 	"hrtf_follow"		"1"
 	"soundentry_version" "2"
 	"operator_stacks"
@@ -549,13 +549,13 @@
 	}
 }
 
-"p24_pi_golf17_reload_empty_04"
+"p12_pi_mike93_reload_empty_04"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
 	"pitch"			"100"
 	"soundlevel"  		"SNDLVL_65dB"
-	"wave"			"weapons/mw22/golf17/p24_pi_golf17_reload_empty_mag_hit.wav"
+	"wave"			"weapons/mw23/mike93/p12_pi_mike93_reload_empty_maghit.wav"
 	"hrtf_follow"		"1"
 	"soundentry_version" "2"
 	"operator_stacks"
@@ -576,13 +576,13 @@
 	}
 }
 
-"p24_pi_golf17_reload_empty_05"
+"p12_pi_mike93_reload_empty_05"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
 	"pitch"			"100"
 	"soundlevel"  		"SNDLVL_65dB"
-	"wave"			"weapons/mw22/golf17/p24_pi_golf17_reload_empty_mag_in.wav"
+	"wave"			"weapons/mw23/mike93/p12_pi_mike93_reload_empty_magin.wav"
 	"hrtf_follow"		"1"
 	"soundentry_version" "2"
 	"operator_stacks"
@@ -603,13 +603,13 @@
 	}
 }
 
-"p24_pi_golf17_reload_empty_055"
+"p24_pi_mike93_reload_empty_055"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
 	"pitch"			"100"
 	"soundlevel"  		"SNDLVL_65dB"
-	"wave"			"weapons/mw22/golf17/p24_pi_golf17_reload_empty_slide_charge.wav"
+	"wave"			"weapons/mw23/mike93/p12_pi_mike93_reload_empty_charge.wav"
 	"hrtf_follow"		"1"
 	"soundentry_version" "2"
 	"operator_stacks"
@@ -630,13 +630,13 @@
 	}
 }
 
-"p24_pi_golf17_reload_empty_06"
+"p12_pi_mike93_reload_empty_06"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
 	"pitch"			"100"
 	"soundlevel"  		"SNDLVL_65dB"
-	"wave"			"weapons/mw22/golf17/p24_pi_golf17_reload_empty_turn_grab.wav"
+	"wave"			"weapons/mw23/mike93/p12_pi_mike93_reload_empty_grab.wav"
 	"hrtf_follow"		"1"
 	"soundentry_version" "2"
 	"operator_stacks"
@@ -657,13 +657,13 @@
 	}
 }
 
-"p24_pi_golf17_raise_01"
+"p12_pi_mike93_raise"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
 	"pitch"			"100"
 	"soundlevel"  		"SNDLVL_65dB"
-	"wave"			"weapons/mw22/golf17/p24_pi_golf17_raise.wav"
+	"wave"			"weapons/mw23/mike93/p12_pi_mike93_raise.wav"
 	"hrtf_follow"		"1"
 	"soundentry_version" "2"
 	"operator_stacks"
