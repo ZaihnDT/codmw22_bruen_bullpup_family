@@ -1,3 +1,5 @@
+![Bruen logo here](bruen_logo.jpg)
+
 # The main addon description is written below:
 
 **Things to check out:**
