@@ -1,0 +1,18 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "zaihny/mw22/weapons/pgolf1/ximage_739e2774f7b8a462_c"
+	
+	"$selfillum" 			"1"
+	"$color2" 			"[ .1 .1 .1 ]"
+	"$blendtintbybasealpha" 	"1"
+
+	"$phong" 			"1"
+	"$phongboost" 			"10"
+	"$phongalbedotint" 		"1"
+	"$phongwarptexture" 		"phongwarp_steel"
+
+	"$envmap" 			"env_cubemap"
+	"$basemapalphaenvmapmask" 	"1"
+	"$envmapfresnel" 		"0.4"
+	"$envmaptint" 			"[ .1 .1 .1 ]"
+}
