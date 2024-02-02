@@ -77,7 +77,7 @@
 + Modern Warfare Base Attachment Packs
 + ARC9 Cod2019 Pack Additions
 
----
+
 
 ## Screenshot Gallery:
 
@@ -99,3 +99,10 @@
 
 ![Screenshot of X12 3D-print](assets/gallery/golf21_plastic.jpg)
 
+![Screenshot of Renetti](assets/gallery/mike93.jpg)
+
+![Screenshot of TAQ-M](assets/gallery/schromeo.jpg)
+
+![Screenshot of LM-S](assets/gallery/pgolf1.jpg)
+
+---
