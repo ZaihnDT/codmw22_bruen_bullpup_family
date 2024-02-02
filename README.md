@@ -24,7 +24,9 @@
 
 ---
 
-### This attachment pack adds all STB 556, MX9 and HCR 56 parts to MW19 AUG. You can only use those together, please don't try to break this system. You can use attachments such as Lasers, Grips, Sights and Muzzle Devices from MWXIX though.
+### [MWB] This attachment pack adds all STB 556, MX9 and HCR 56 parts to MW19 AUG. You can only use those together, please don't try to break this system. You can use attachments such as Lasers, Grips, Sights and Muzzle Devices from MWXIX though.
+
+### [ARC9] This version adds STB 556 and it's weapon-specific attachments, you need to have Cod2019 pack installed to access it's attachments.
 
 ---
 
