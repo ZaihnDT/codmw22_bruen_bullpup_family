@@ -101,7 +101,7 @@
 
 ![Screenshot of Renetti](assets/gallery/mike93.jpg)
 
-![Screenshot of TAQ-M](assets/gallery/schromeo.jpg)
+![Screenshot of TAQ-M](assets/gallery/scromeo.jpg)
 
 ![Screenshot of LM-S](assets/gallery/pgolf1.jpg)
 
