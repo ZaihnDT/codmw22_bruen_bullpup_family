@@ -107,4 +107,6 @@
 
 ![Screenshot of LM-S](assets/gallery/pgolf1.jpg)
 
+![Screenshot of LA-B 330](assets/gallery/la700.jpg)
+
 ---
