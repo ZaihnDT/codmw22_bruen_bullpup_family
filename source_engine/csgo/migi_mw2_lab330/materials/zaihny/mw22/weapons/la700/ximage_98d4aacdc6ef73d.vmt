@@ -1,0 +1,19 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "zaihny/mw22/weapons/la700/ximage_98d4aacdc6ef73d_c"
+	"$bumpmap" "zaihny/mw22/weapons/la700/ximage_98d4aacdc6ef73d_n"
+	"$phongexponenttexture" "zaihny/mw22/weapons/la700/ximage_98d4aacdc6ef73d_m"
+
+	"$color2" 			"[ .1 .1 .1 ]"
+	"$blendtintbybasealpha" 	"1"
+
+	"$phong" 			"1"
+	"$phongboost" 			"10"
+	"$phongalbedotint" 		"1"
+	"$phongwarptexture" 		"phongwarp_steel"
+
+	"$envmap" 			"env_cubemap"
+	"$basemapalphaenvmapmask" 	"1"
+	"$envmapfresnel" 		"0.4"
+	"$envmaptint" 			"[ .1 .1 .1 ]"
+}
