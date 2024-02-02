@@ -81,4 +81,8 @@
 
 ## Screenshot Gallery:
 
-![Screenshot of ](assets/gallery/augolf.jpg)
+![Screenshot of STB 556](assets/gallery/augolf.jpg)
+
+![Screenshot of HCR 56](assets/gallery/ahotel.jpg)
+
+![Screenshot of MX9](assets/gallery/apapa.jpg)
