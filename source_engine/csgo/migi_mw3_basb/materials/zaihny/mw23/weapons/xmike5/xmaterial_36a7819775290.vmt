@@ -1,0 +1,19 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "zaihny/mw23/weapons/xmike5/xmaterial_36a7819775290_c"
+	"$bumpmap" "zaihny/mw23/weapons/xmike5/xmaterial_36a7819775290_n"
+	"$phongexponenttexture" "zaihny/mw23/weapons/xmike5/xmaterial_36a7819775290_m"
+
+	"$color2" 			"[ .1 .1 .1 ]"
+	"$blendtintbybasealpha" 	"1"
+
+	"$phong" 			"1"
+	"$phongboost" 			"10"
+	"$phongalbedotint" 		"1"
+	"$phongwarptexture" 		"phongwarp_steel"
+
+	"$envmap" 			"env_cubemap"
+	"$basemapalphaenvmapmask" 	"1"
+	"$envmapfresnel" 		"0.4"
+	"$envmaptint" 			"[ .1 .1 .1 ]"
+}

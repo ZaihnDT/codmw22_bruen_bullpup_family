@@ -1,0 +1,27 @@
+{
+	"name": "BAS-B | Modern Warfare III",
+	"authors": 
+	[
+		{
+			"name": "Infinity Ward, Sledgehammer, Treyarch", 
+			"role": "Modern Warfare III"
+		},
+		{
+			"name": "Lutzz", 
+			"role": "CSGO_COD-RIG"
+		},
+		{
+			"name": "ma_rv", 
+			"role": "fastvalvematerial"
+		},
+		{
+			"name": "Scobalula", 
+			"role": "Greyhound"
+		},
+		{
+			"name": "ZaihnY", 
+			"role": "Porting"
+		}
+	],
+	"replacement": "rif_m4a4"
+}
