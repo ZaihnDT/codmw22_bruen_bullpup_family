@@ -109,4 +109,6 @@
 
 ![Screenshot of LA-B 330](assets/gallery/la700.jpg)
 
+![Screenshot of BAS-B](assets/gallery/xmike5.jpg)
+
 ---
