@@ -93,6 +93,8 @@
 
 ![Screenshot of Kastov 545](assets/gallery/akilo105.jpg)
 
+![Screenshot of RPK](assets/gallery/rkilo_cust.jpg)
+
 ![Screenshot of Minibak](assets/gallery/beta.jpg)
 
 ![Screenshot of X12](assets/gallery/golf17.jpg)
