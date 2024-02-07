@@ -103,6 +103,8 @@
 
 ![Screenshot of X12 3D-print](assets/gallery/golf21_plastic.jpg)
 
+![Screenshot of P890](assets/gallery/papa220.jpg)
+
 ![Screenshot of Renetti](assets/gallery/mike93.jpg)
 
 ![Screenshot of TAQ-M](assets/gallery/scromeo.jpg)
