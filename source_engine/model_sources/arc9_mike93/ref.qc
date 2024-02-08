@@ -35,11 +35,15 @@ $bodygroup "trigger"
 $bodygroup "mag"
 {
 	studio "mag_15"
+	studio "mag_24"
+	studio "mag_30"
+	studio "mag_50"
 }
 $bodygroup "ammo"
 {
 	studio "9p"
 }
+
 
 $include bones_chands.qci
 $include bones_mwrig.qci
@@ -58,6 +62,7 @@ $attachment "4" "tag_camera" 0 0 0 rotate 0 0 0
 
 $cbox 0 0 0 0 0 0
 $include "additives.qci"
+$include "additives_supersprint.qci"
 
 $sequence "idle" {
 	"anims\idle.smd"
@@ -68,6 +73,7 @@ $sequence "idle" {
 	fadeout 0.2
 	node "Ready"
 	addlayer "empty"
+	addlayer "firemode"
 	addlayer "blend_move"
 	addlayer "blend_walk"
 	ikrule rhand touch "tag_sling" usesource
@@ -84,6 +90,7 @@ $sequence "shoot1" {
 	snap
 	fps 60
 	addlayer "empty"
+	addlayer "firemode"
 	blend "aim_blend" 0 1
 	addlayer "blend_move"
 	addlayer "blend_walk"
@@ -109,6 +116,7 @@ $sequence "reload" {
 	{ event 9011 45 "1" }
 	addlayer "blend_move"
 	addlayer "blend_walk"
+	addlayer "firemode"
 	ikrule rhand touch "tag_sling" usesource
 	ikrule lhand touch "tag_sling" usesource
 }
@@ -131,6 +139,123 @@ $sequence "reload_empty" {
 	{ event 5004 51 "Viewmodel.Medium" }
 	addlayer "blend_move"
 	addlayer "blend_walk"
+	addlayer "firemode"
+	ikrule rhand touch "tag_sling" usesource
+	ikrule lhand touch "tag_sling" usesource
+}
+
+$sequence "reload_fast" {
+	"anims\reload_fast.smd"
+	"anims\reload_fast_ads.smd"
+	activity "ACT_VM_RELOAD" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	blend "aim_blend" 0 1
+	{ event 9011 0 "0" }
+	{ event 5004 6 "Viewmodel.Small" }
+	{ event 5004 19 "Viewmodel.Small" }
+	{ event 5004 21 "Viewmodel.Medium" }
+	{ event 9011 25 "1" }
+	addlayer "blend_move"
+	addlayer "blend_walk"
+	addlayer "firemode"
+	ikrule rhand touch "tag_sling" usesource
+	ikrule lhand touch "tag_sling" usesource
+}
+
+$sequence "reload_fast_empty" {
+	"anims\reload_empty_fast.smd"
+	"anims\reload_empty_fast_ads.smd"
+	activity "ACT_VM_RELOAD" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	blend "aim_blend" 0 1
+	addlayer "blend_move"
+	addlayer "blend_walk"
+	addlayer "firemode"
+	ikrule rhand touch "tag_sling" usesource
+	ikrule lhand touch "tag_sling" usesource
+}
+
+$sequence "reload_xmag" {
+	"anims\reload_30rd.smd"
+	"anims\reload_30rd_ads.smd"
+	activity "ACT_VM_RELOAD" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	//addlayer "empty"
+	blend "aim_blend" 0 1
+	{ event 9011 0 "0" }
+	{ event 5004 6 "Viewmodel.Small" }
+	{ event 5004 9 "Viewmodel.Medium" }
+	{ event 5004 19 "Viewmodel.Small" }
+	{ event 5004 25 "Viewmodel.Medium" }
+	{ event 5004 39 "Viewmodel.Large" }
+	{ event 9011 45 "1" }
+	addlayer "blend_move"
+	addlayer "blend_walk"
+	addlayer "firemode"
+	ikrule rhand touch "tag_sling" usesource
+	ikrule lhand touch "tag_sling" usesource
+}
+
+$sequence "reload_xmag_empty" {
+	"anims\reload_empty_30rd.smd"
+	"anims\reload_empty_30rd_ads.smd"
+	activity "ACT_VM_RELOAD" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	//addlayer "empty"
+	blend "aim_blend" 0 1
+	{ event 9011 0 "0" }
+	{ event 5004 11 "Viewmodel.Small" }
+	{ event 5004 21 "Viewmodel.Small" }
+	{ event 5004 34 "Viewmodel.Small" }
+	{ event 5004 36 "Viewmodel.Medium" }
+	{ event 5004 49 "Viewmodel.Small" }
+	{ event 5004 51 "Viewmodel.Medium" }
+	addlayer "blend_move"
+	addlayer "blend_walk"
+	addlayer "firemode"
+	ikrule rhand touch "tag_sling" usesource
+	ikrule lhand touch "tag_sling" usesource
+}
+
+$sequence "reload_xmag_fast" {
+	"anims\reload_fast_30rd.smd"
+	"anims\reload_fast_30rd_ads.smd"
+	activity "ACT_VM_RELOAD" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	blend "aim_blend" 0 1
+	{ event 9011 0 "0" }
+	{ event 5004 6 "Viewmodel.Small" }
+	{ event 5004 19 "Viewmodel.Small" }
+	{ event 5004 21 "Viewmodel.Medium" }
+	{ event 9011 25 "1" }
+	addlayer "blend_move"
+	addlayer "blend_walk"
+	addlayer "firemode"
+	ikrule rhand touch "tag_sling" usesource
+	ikrule lhand touch "tag_sling" usesource
+}
+
+$sequence "reload_xmag_fast_empty" {
+	"anims\reload_empty_fast.smd"
+	"anims\reload_empty_fast_ads.smd"
+	activity "ACT_VM_RELOAD" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	blend "aim_blend" 0 1
+	addlayer "blend_move"
+	addlayer "blend_walk"
+	addlayer "firemode"
 	ikrule rhand touch "tag_sling" usesource
 	ikrule lhand touch "tag_sling" usesource
 }
@@ -153,25 +278,62 @@ $sequence "reload_drum" {
 	{ event 9011 67 "1" }
 	addlayer "blend_move"
 	addlayer "blend_walk"
+	addlayer "firemode"
 	ikrule rhand touch "tag_sling" usesource
 	ikrule lhand touch "tag_sling" usesource
 }
 
-$sequence "reload_fast" {
-	"anims\reload_fast.smd"
-	"anims\reload_fast_ads.smd"
+$sequence "reload_drum_empty" {
+	"anims\reload_empty_drum.smd"
+	"anims\reload_empty_drum_ads.smd"
 	activity "ACT_VM_RELOAD" 1
 	fadein 0.2
 	fadeout 0.2
 	fps 30
+	//addlayer "empty"
 	blend "aim_blend" 0 1
-	{ event 9011 0 "0" }
-	{ event 5004 6 "Viewmodel.Small" }
-	{ event 5004 19 "Viewmodel.Small" }
-	{ event 5004 21 "Viewmodel.Medium" }
-	{ event 9011 25 "1" }
 	addlayer "blend_move"
 	addlayer "blend_walk"
+	addlayer "firemode"
+	ikrule rhand touch "tag_sling" usesource
+	ikrule lhand touch "tag_sling" usesource
+}
+
+$sequence "reload_drum_fast" {
+	"anims\reload_fast_drum.smd"
+	"anims\reload_fast_drum_ads.smd"
+	activity "ACT_VM_RELOAD" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	//addlayer "empty"
+	blend "aim_blend" 0 1
+	{ event 9011 0 "0" }
+	{ event 5004 20 "Viewmodel.Small" }
+	{ event 5004 24 "Viewmodel.Small" }
+	{ event 5004 35 "Viewmodel.Small" }
+	{ event 5004 40 "Viewmodel.Medium" }
+	{ event 5004 48 "Viewmodel.Medium" }
+	{ event 9011 67 "1" }
+	addlayer "blend_move"
+	addlayer "blend_walk"
+	addlayer "firemode"
+	ikrule rhand touch "tag_sling" usesource
+	ikrule lhand touch "tag_sling" usesource
+}
+
+$sequence "reload_drum_fast_empty" {
+	"anims\reload_empty_fast_drum.smd"
+	"anims\reload_empty_fast_drum_ads.smd"
+	activity "ACT_VM_RELOAD" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	//addlayer "empty"
+	blend "aim_blend" 0 1
+	addlayer "blend_move"
+	addlayer "blend_walk"
+	addlayer "firemode"
 	ikrule rhand touch "tag_sling" usesource
 	ikrule lhand touch "tag_sling" usesource
 }
@@ -188,6 +350,7 @@ $sequence "draw" {
 	{ event 9011 4 "1" }
 	addlayer "blend_move"
 	addlayer "blend_walk"
+	addlayer "firemode"
 	ikrule rhand touch "tag_sling" usesource
 	ikrule lhand touch "tag_sling" usesource
 }
@@ -203,6 +366,7 @@ $sequence "draw_short" {
 	{ event 9011 20 "1" }
 	addlayer "blend_move"
 	addlayer "blend_walk"
+	addlayer "firemode"
 	ikrule rhand touch "tag_sling" usesource
 	ikrule lhand touch "tag_sling" usesource
 }
@@ -213,6 +377,7 @@ $sequence "holster" {
 	fadeout 0.3
 	fps 30
 	addlayer "empty"
+	addlayer "firemode"
 	{ event 9011 0 "0" }
 	addlayer "blend_move"
 	addlayer "blend_walk"
@@ -240,6 +405,7 @@ $sequence "lookat01" {
 	{ event 5004 128 "Viewmodel.Small" }
 	addlayer "blend_move"
 	addlayer "blend_walk"
+	addlayer "firemode"
 	ikrule rhand touch "tag_sling" usesource
 	ikrule lhand touch "tag_sling" usesource
 }
@@ -256,6 +422,90 @@ $sequence "lookat01_drum" {
 	{ event 5004 118 "Viewmodel.Small" }
 	addlayer "blend_move"
 	addlayer "blend_walk"
+	addlayer "firemode"
+	ikrule rhand touch "tag_sling" usesource
+	ikrule lhand touch "tag_sling" usesource
+}
+
+$sequence "melee" {
+	"anims\melee_hit_01.smd"
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	addlayer "empty"
+	{ event 9011 0 "0" }
+	{ event 9021 0 "0" }
+	{ event 5004 7 "Viewmodel.Large" }
+	{ event 5004 8 "Viewmodel.Medium" }
+	{ event 9021 26 "1" }
+	{ event 9011 26 "1" }
+	{ event 5004 31 "Viewmodel.Small" }
+	addlayer "blend_move"
+	addlayer "blend_walk"
+	ikrule rhand touch "tag_pistol_offset" usesource
+	ikrule lhand touch "tag_pistol_offset" usesource
+}
+
+$sequence "melee2" {
+	"anims\melee_hit_02.smd"
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	addlayer "empty"
+	{ event 9011 0 "0" }
+	{ event 9021 0 "0" }
+	{ event 5004 7 "Viewmodel.Large" }
+	{ event 5004 8 "Viewmodel.Medium" }
+	{ event 9021 26 "1" }
+	{ event 9011 26 "1" }
+	{ event 5004 31 "Viewmodel.Small" }
+	addlayer "blend_move"
+	addlayer "blend_walk"
+	ikrule rhand touch "tag_pistol_offset" usesource
+	ikrule lhand touch "tag_pistol_offset" usesource
+}
+
+$sequence "melee3" {
+	"anims\melee_hit_03.smd"
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	addlayer "empty"
+	{ event 9011 0 "0" }
+	{ event 9021 0 "0" }
+	{ event 5004 7 "Viewmodel.Large" }
+	{ event 5004 8 "Viewmodel.Medium" }
+	{ event 9021 26 "1" }
+	{ event 9011 26 "1" }
+	{ event 5004 31 "Viewmodel.Small" }
+	addlayer "blend_move"
+	addlayer "blend_walk"
+	ikrule rhand touch "tag_pistol_offset" usesource
+	ikrule lhand touch "tag_pistol_offset" usesource
+}
+
+$sequence "selectsemi_off" {
+	"anims\selectsemi_off.smd"
+	fadein 0.1
+	fadeout 0.3
+	fps 30
+	{ event 9011 0 "0" }
+	addlayer "blend_move"
+	addlayer "blend_walk"
+	addlayer "empty"
+	ikrule rhand touch "tag_sling" usesource
+	ikrule lhand touch "tag_sling" usesource
+}
+
+$sequence "selectsemi_on" {
+	"anims\selectsemi_on.smd"
+	fadein 0.1
+	fadeout 0.3
+	fps 30
+	{ event 9011 0 "0" }
+	addlayer "blend_move"
+	addlayer "blend_walk"
+	addlayer "empty"
 	ikrule rhand touch "tag_sling" usesource
 	ikrule lhand touch "tag_sling" usesource
 }

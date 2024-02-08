@@ -52,6 +52,7 @@ $sequence "sprint_in" {
 	addlayer "blend_move"
 	addlayer "blend_walk"
 	addlayer "empty"
+	addlayer "firemode"
 	ikrule rhand touch "tag_sling" usesource
     ikrule lhand touch "tag_sling" usesource
 }
@@ -78,6 +79,7 @@ $sequence "sprint_out" {
 	addlayer "blend_move"
 	addlayer "blend_walk"
 	addlayer "empty"
+	addlayer "firemode"
 	ikrule rhand touch "tag_sling" usesource
     ikrule lhand touch "tag_sling" usesource
 }
@@ -106,6 +108,7 @@ $sequence "sprint" {
 	addlayer "sprint_loop"
 	addlayer "sprint_offset"
 	addlayer "empty"
+	addlayer "firemode"
 	ikrule rhand touch "tag_sling" usesource
 	ikrule lhand touch "tag_sling" usesource
 }
@@ -150,18 +153,46 @@ $sequence "empty" {
 //      FIREMODE ADDITIVE
 
 // To Sub
-//$animation firemode_idle_to_sub "anims\vm_p27_pi_papa220_idle.smd"
+$animation firemode_idle_to_sub "anims\idle.smd"
 // Subbed
-//$animation a_firemode_idle "anims\vm_p27_pi_papa220_idle.smd" fps 0.416 subtract firemode_idle_to_sub 0
-//$animation a_semi_override_additive "anims\firemode_additive.smd" frames 1 1 subtract firemode_idle_to_sub 0
+$animation a_firemode_idle "anims\idle.smd" fps 0.416 subtract firemode_idle_to_sub 0
+$animation a_semi_override_additive "anims\selectsemi_off.smd" frames 0 0 subtract firemode_idle_to_sub 0
 
 // Delta
-//$sequence "firemode" {
-	//a_firemode_idle
-	//a_semi_override_additive
-	//blendwidth 2
-	//blend "firemode" 0 1
-	//delta
-	//realtime
-	//hidden
-//}
+$sequence "firemode" {
+	a_firemode_idle
+	a_semi_override_additive
+	blendwidth 2
+	blend "firemode" 0 1
+	delta
+	realtime
+	hidden
+}
+
+//      DRYFIRE
+
+// To Sub
+$animation dryfire_to_sub "anims\iw8_vm_default_land.smd"
+
+// Delta
+$sequence "a_dryfire" {
+	"anims\iw8_vm_default_land.smd" 
+	subtract dryfire_to_sub 22
+	delta
+	hidden
+}
+
+// Sequence
+$sequence "dryfire" {
+	"anims\idle.smd" //this is one frame so fps 1 is 1 second
+	fps 1.363 //30 divided by the number of frames of jump_land
+	addlayer "a_dryfire"
+	addlayer "blend_move"
+	addlayer "blend_walk"
+	addlayer "firemode"
+	addlayer "empty"
+	fadein 0.3
+	fadeout 0.3
+	ikrule rhand touch "tag_sling" usesource
+    ikrule lhand touch "tag_sling" usesource
+}
