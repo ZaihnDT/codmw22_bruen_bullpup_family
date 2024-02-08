@@ -18,7 +18,7 @@ ATT.RecoilMult = 1.1
 ATT.RecoilUpMult = 1.1
 ATT.RecoilSideMult = 1.4
 
-ARC9.LoadAttachment(ATT, "cod2022_renetti_triggerlight")
+ARC9.LoadAttachment(ATT, "cod2023_renetti_triggerlight")
 ---------------------------------------------------------------------------------------
 ATT = {}
 
@@ -38,7 +38,7 @@ ATT.RecoilMult = 0.85
 ATT.RecoilSideMult = 1.15
 ATT.RecoilAutoControlMult = 2
 
-ARC9.LoadAttachment(ATT, "cod2022_renetti_triggerhvy")
+ARC9.LoadAttachment(ATT, "cod2023_renetti_triggerhvy")
 ---------------------------------------------------------------------------------------
 ATT = {}
 
@@ -57,5 +57,5 @@ ATT.AimDownSightsTimeMult = 0.75
 
 ATT.SprintToFireTimeMult = 1.1
 
-ARC9.LoadAttachment(ATT, "cod2022_renetti_triggerhair")
+ARC9.LoadAttachment(ATT, "cod2023_renetti_triggerhair")
 ---------------------------------------------------------------------------------------

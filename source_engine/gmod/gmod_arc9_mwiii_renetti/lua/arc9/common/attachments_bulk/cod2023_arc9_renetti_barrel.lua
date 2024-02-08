@@ -17,7 +17,7 @@ ATT.ActivateElements = {"barlong"}
 
 ATT.PhysBulletMuzzleVelocityMult = 1.4
 
-ARC9.LoadAttachment(ATT, "cod2022_renetti_barlong")
+ARC9.LoadAttachment(ATT, "cod2023_renetti_barlong")
 ---------------------------------------------------------------------------------------
 ATT = {}
 
@@ -37,7 +37,7 @@ ATT.ActivateElements = {"barshort"}
 ATT.DamageTypeOverride = DMG_AIRBOAT
 ATT.ArmorPiercingMult = 3.5
 
-ARC9.LoadAttachment(ATT, "cod2022_renetti_barshort")
+ARC9.LoadAttachment(ATT, "cod2023_renetti_barshort")
 ---------------------------------------------------------------------------------------
 ATT = {}
 
@@ -60,5 +60,5 @@ ATT.PhysBulletMuzzleVelocityMult = 1.8
 ATT.SpeedMult = 0.96
 ATT.SpeedMultSights = 0.85
 
-ARC9.LoadAttachment(ATT, "cod2022_renetti_barlonghvy")
+ARC9.LoadAttachment(ATT, "cod2023_renetti_barlonghvy")
 ---------------------------------------------------------------------------------------

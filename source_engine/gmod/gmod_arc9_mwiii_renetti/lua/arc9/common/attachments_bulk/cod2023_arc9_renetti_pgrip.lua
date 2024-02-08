@@ -17,7 +17,7 @@ ATT.AimDownSightsTimeMult = 0.8
 
 ATT.SprintToFireTimeMult = 1.12
 
-ARC9.LoadAttachment(ATT, "cod2022_renetti_pgriptac")
+ARC9.LoadAttachment(ATT, "cod2023_renetti_pgriptac")
 ---------------------------------------------------------------------------------------
 ATT = {}
 
@@ -36,7 +36,7 @@ ATT.AimDownSightsTimeMult = 0.75
 
 ATT.SprintToFireTimeMult = 1.1
 
-ARC9.LoadAttachment(ATT, "cod2022_renetti_pgripergo")
+ARC9.LoadAttachment(ATT, "cod2023_renetti_pgripergo")
 ---------------------------------------------------------------------------------------
 ATT = {}
 
@@ -56,5 +56,5 @@ ATT.AimDownSightsTimeMult = 0.7
 ATT.SprintToFireTimeMult = 1.15
 ATT.SpeedMultShootingMult = 0.85
 
-ARC9.LoadAttachment(ATT, "cod2022_renetti_pgripaim")
+ARC9.LoadAttachment(ATT, "cod2023_renetti_pgripaim")
 ---------------------------------------------------------------------------------------

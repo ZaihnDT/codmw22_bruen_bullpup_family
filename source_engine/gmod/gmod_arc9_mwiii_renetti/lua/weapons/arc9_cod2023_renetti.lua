@@ -151,7 +151,7 @@ SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being a
 
 -------------------------- MELEE
 
-SWEP.Bash = false
+SWEP.Bash = true
 SWEP.PrimaryBash = false
 SWEP.PreBashTime = 0.2
 SWEP.PostBashTime = 0.2
@@ -392,6 +392,363 @@ SWEP.Animations = {
 			{s = path .. "p12_pi_mike93_reload_empty_charge.ogg", t = 37/30},
         },
     },
+    ["reload_fast"] = {
+        Source = "reload_fast",
+		MinProgress = 0.8,
+		MagSwapTime = 3.5,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.85,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+			{s = path .. "p12_pi_mike93_reload_fast_raise.ogg", t = 1/30},
+			{s = path .. "p12_pi_mike93_reload_fast_magrelease.ogg", t = 9/30},
+			{s = path .. "p12_pi_mike93_reload_fast_magout.ogg", t = 10/30},
+			{s = path .. "p12_pi_mike93_reload_fast_mvmnt.ogg", t = 19/30},
+			{s = path .. "p12_pi_mike93_reload_fast_magin.ogg", t = 21/30},
+			{s = path .. "p12_pi_mike93_reload_fast_maghit.ogg", t = 23/30},
+			{s = path .. "p12_pi_mike93_reload_fast_end.ogg", t = 30/30},
+        },
+    },
+    ["reload_fast_empty"] = {
+        Source = "reload_fast_empty",
+		MinProgress = 0.9,
+		DropMagAt = 0.8,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.95,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+			{s = path .. "p12_pi_mike93_reload_fast_magrelease.ogg", t = 1/30},
+			{s = path .. "p12_pi_mike93_reload_fast_magout.ogg", t = 9/30},
+			{s = path .. "p12_pi_mike93_reload_fast_mvmnt.ogg", t = 18/30},
+			{s = path .. "p12_pi_mike93_reload_fast_magin.ogg", t = 23/30},
+			{s = path .. "p12_pi_mike93_reload_fast_maghit.ogg", t = 30/30},
+			{s = path .. "p12_pi_mike93_raise_first_charge.ogg", t = 34/30},
+			{s = path .. "p12_pi_mike93_reload_fast_end.ogg", t = 42/30},
+        },
+    },
+    ["reload_xmag"] = {
+        Source = "reload_xmag",
+		MinProgress = 0.8,
+		MagSwapTime = 3.5,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.85,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+			{s = path .. "p12_pi_mike93_reload_raise.ogg", t = 0/30},
+			{s = path .. "p24_pi_golf17_reload_slide_release_press.ogg", t = 15/30},
+			{s = path .. "p12_pi_mike93_reload_empty_magout.ogg", t = 17/30},
+			{s = path .. "p12_pi_mike93_reload_empty_maghit.ogg", t = 31/30},
+			{s = path .. "p12_pi_mike93_reload_empty_magin.ogg", t = 35/30},
+			{s = path .. "p12_pi_mike93_reload_empty_end.ogg", t = 42/30},
+        },
+    },
+    ["reload_xmag_empty"] = {
+        Source = "reload_xmag_empty",
+		MinProgress = 0.9,
+		DropMagAt = 0.8,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.95,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+			{s = path .. "p12_pi_mike93_reload_raise.ogg", t = 2/30},
+			{s = path .. "p12_pi_mike93_reload_empty_magout.ogg", t = 11/30},
+			{s = path .. "p12_pi_mike93_reload_empty_grab.ogg", t = 25/30},
+			{s = path .. "p12_pi_mike93_reload_empty_maghit.ogg", t = 40/30},
+			{s = path .. "p12_pi_mike93_reload_empty_magin.ogg", t = 46/30},
+			{s = path .. "p12_pi_mike93_reload_empty_charge.ogg", t = 58/30},
+        },
+    },
+    ["reload_xmag_fast"] = {
+        Source = "reload_xmag_fast",
+		MinProgress = 0.8,
+		MagSwapTime = 3.5,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.85,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+			{s = path .. "p12_pi_mike93_reload_fast_raise.ogg", t = 1/30},
+			{s = path .. "p12_pi_mike93_reload_fast_magrelease.ogg", t = 9/30},
+			{s = path .. "p12_pi_mike93_reload_fast_magout.ogg", t = 10/30},
+			{s = path .. "p12_pi_mike93_reload_fast_mvmnt.ogg", t = 19/30},
+			{s = path .. "p12_pi_mike93_reload_fast_magin.ogg", t = 21/30},
+			{s = path .. "p12_pi_mike93_reload_fast_maghit.ogg", t = 23/30},
+			{s = path .. "p12_pi_mike93_reload_fast_end.ogg", t = 30/30},
+        },
+    },
+    ["reload_xmag_fast_empty"] = {
+        Source = "reload_xmag_fast_empty",
+		MinProgress = 0.9,
+		DropMagAt = 0.8,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.95,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+			{s = path .. "p12_pi_mike93_reload_fast_magrelease.ogg", t = 1/30},
+			{s = path .. "p12_pi_mike93_reload_fast_magout.ogg", t = 9/30},
+			{s = path .. "p12_pi_mike93_reload_fast_mvmnt.ogg", t = 18/30},
+			{s = path .. "p12_pi_mike93_reload_fast_magin.ogg", t = 23/30},
+			{s = path .. "p12_pi_mike93_reload_fast_maghit.ogg", t = 30/30},
+			{s = path .. "p12_pi_mike93_raise_first_charge.ogg", t = 34/30},
+			{s = path .. "p12_pi_mike93_reload_fast_end.ogg", t = 42/30},
+        },
+    },
+    ["reload_drum"] = {
+        Source = "reload_drum",
+		MinProgress = 0.8,
+		MagSwapTime = 3.5,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.85,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+			{s = path .. "p12_pi_mike93_reload_drum_raise.ogg", t =5/30},
+			{s = path .. "p12_pi_mike93_reload_drum_drumout.ogg", t = 11/30},
+			{s = path .. "p12_pi_mike93_reload_drum_mvmnt1.ogg", t = 20/30},
+			{s = path .. "p12_pi_mike93_reload_drum_grab.ogg", t = 27/30},
+			{s = path .. "p12_pi_mike93_reload_drum_drumin.ogg", t = 46/30},
+			{s = path .. "p12_pi_mike93_reload_drum_drumsmack.ogg", t = 58/30},
+			{s = path .. "p12_pi_mike93_reload_drum_end.ogg", t = 67/30},
+        },
+    },
+    ["reload_drum_empty"] = {
+        Source = "reload_drum_empty",
+		MinProgress = 0.9,
+		DropMagAt = 0.8,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.95,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+			{s = path .. "p12_pi_mike93_reload_empty_drum_raise.ogg", t = 1/30},
+			{s = path .. "p12_pi_mike93_reload_empty_drum_arm.ogg", t = 15/30},
+			{s = path .. "p12_pi_mike93_reload_empty_drum_drumout.ogg", t = 36/30},
+			{s = path .. "p12_pi_mike93_reload_empty_drum_rotate.ogg", t = 53/30},
+			{s = path .. "p12_pi_mike93_reload_empty_drum_drumin.ogg", t = 58/30},
+			{s = path .. "p12_pi_mike93_reload_empty_drum_drumsmack.ogg", t = 68/30},
+			{s = path .. "p12_pi_mike93_reload_empty_drum_charge.ogg", t = 88/30},
+			{s = path .. "p12_pi_mike93_reload_empty_drum_end.ogg", t = 95/30},
+        },
+    },
+    ["reload_drum_fast"] = {
+        Source = "reload_drum_fast",
+		MinProgress = 0.8,
+		MagSwapTime = 3.5,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.85,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+			{s = path .. "p12_pi_mike93_reload_fast_raise.ogg", t =8/30},
+			{s = path .. "p12_pi_mike93_reload_drum_drumout.ogg", t = 22/30},
+			{s = path .. "p12_pi_mike93_reload_drum_mvmnt1.ogg", t = 22/30},
+			{s = path .. "p12_pi_mike93_reload_drum_grab.ogg", t = 43/30},
+			{s = path .. "p12_pi_mike93_reload_drum_drumin.ogg", t = 52/30},
+        },
+    },
+    ["reload_drum_fast_empty"] = {
+        Source = "reload_drum_fast_empty",
+		MinProgress = 0.9,
+		DropMagAt = 0.8,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.95,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+			{s = path .. "p12_pi_mike93_reload_fast_raise.ogg", t = 4/30},
+			{s = path .. "p12_pi_mike93_reload_empty_drum_drumout.ogg", t = 14/30},
+			{s = path .. "p12_pi_mike93_reload_empty_drum_rotate.ogg", t = 28/30},
+			{s = path .. "p12_pi_mike93_reload_drum_drumin.ogg", t = 40/30},
+			{s = path .. "p12_pi_mike93_raise_first_charge.ogg", t = 47/30},
+			{s = path .. "p12_pi_mike93_reload_empty_drum_end.ogg", t = 63/30},
+
+        },
+    },
     ["ready"] = {
         Source = "draw",
         IKTimeLine = {
@@ -486,6 +843,47 @@ SWEP.Animations = {
 			{s = path .. "p12_pi_mike93_inspect_end.ogg", t = 100/30},
         },
     },
+    ["inspect_drum"] = {
+        Source = "lookat01_drum",
+        MinProgress = 0.1,
+        FireASAP = true,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.1,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+			{s = path .. "p12_pi_mike93_inspect_raise.ogg", t = 1/30},
+			{s = path .. "p24_pi_golf17_inspect_mag_release.ogg", t = 10/30},
+			{s = path .. "p12_pi_mike93_reload_drum_drumout.ogg", t = 12/30},
+			{s = path .. "p12_pi_mike93_reload_drum_drumsmack.ogg", t = 49/30},
+			{s = path .. "p12_pi_mike93_reload_drum_drumin.ogg", t = 53/30},
+			{s = path .. "p12_pi_mike93_inspect_slidepull.ogg", t = 71/30},
+			{s = path .. "p12_pi_mike93_inspect_slideforward.ogg", t = 87/30},
+			{s = path .. "p12_pi_mike93_inspect_slidehit.ogg", t = 100/30},
+			{s = path .. "p12_pi_mike93_inspect_end.ogg", t = 100/30},
+        },
+    },
+    ["bash"] = {
+        Source = {"melee","melee2","melee3"},
+    },
 }
 
 -------------------------- ATTACHMENTS
@@ -494,30 +892,43 @@ SWEP.Hook_TranslateAnimation = function (wep, anim)
     --local attached = self:GetElements()
 
     --------------------------------------------------------------------------
-    if anim == "reload" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_xmag") then
+    if anim == "reload" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_24") then
         return "reload_xmag_fast"
-    elseif anim == "reload_empty" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_xmag") then
+    elseif anim == "reload_empty" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_24") then
         return "reload_xmag_fast_empty"
 	--------------------------------------------------------------------------
-    elseif anim == "reload" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_xmaglrg") then
-        return "reload_xmaglrg_fast"
-    elseif anim == "reload_empty" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_xmaglrg") then
-        return "reload_xmaglrg_fast_empty"
+    elseif anim == "reload" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_30") then
+        return "reload_xmag_fast"
+    elseif anim == "reload_empty" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_30") then
+        return "reload_xmag_fast_empty"
+	--------------------------------------------------------------------------
+    elseif anim == "reload" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_50") then
+        return "reload_drum_fast"
+    elseif anim == "reload_empty" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_50") then
+        return "reload_drum_fast_empty"
 	--------------------------------------------------------------------------
     elseif anim == "reload" and wep:HasElement("perk_speedreload") then
         return "reload_fast"
     elseif anim == "reload_empty" and wep:HasElement("perk_speedreload") then
         return "reload_fast_empty"
 	--------------------------------------------------------------------------
-    elseif anim == "reload" and wep:HasElement("mag_xmag") then
+    elseif anim == "reload" and wep:HasElement("mag_24") then
         return "reload_xmag"
-    elseif anim == "reload_empty" and wep:HasElement("mag_xmag") then
+    elseif anim == "reload_empty" and wep:HasElement("mag_24") then
         return "reload_xmag_empty"
 	--------------------------------------------------------------------------
-    elseif anim == "reload" and wep:HasElement("mag_xmaglrg") then
-        return "reload_xmaglrg"
-    elseif anim == "reload_empty" and wep:HasElement("mag_xmaglrg") then
-        return "reload_xmaglrg_empty"
+    elseif anim == "reload" and wep:HasElement("mag_30") then
+        return "reload_xmag"
+    elseif anim == "reload_empty" and wep:HasElement("mag_30") then
+        return "reload_xmag_empty"
+	--------------------------------------------------------------------------
+    elseif anim == "reload" and wep:HasElement("mag_50") then
+        return "reload_drum"
+    elseif anim == "reload_empty" and wep:HasElement("mag_50") then
+        return "reload_drum_empty"
+	--------------------------------------------------------------------------
+    elseif anim == "inspect" and wep:HasElement("mag_50") then
+        return "inspect_drum"
 	--------------------------------------------------------------------------
     end
 end
@@ -638,6 +1049,21 @@ SWEP.AttachmentElements = {
             {4,3},
         },
     },
+    ["mag24"] = {
+        Bodygroups = {
+            {5,1},
+        },
+    },
+    ["mag30"] = {
+        Bodygroups = {
+            {5,2},
+        },
+    },
+    ["mag50"] = {
+        Bodygroups = {
+            {5,3},
+        },
+    },
 	["muzzle_comp"] = {
     AttPosMods = { [2] = { Pos = Vector(-0.2, 0, 0), } }	
 	}
@@ -696,11 +1122,23 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
     },
     {
+        PrintName = "Magazine",
+        DefaultAttName = "15 Round mag",
+        Category = "cod2023_renetti_mag",
+        Bone = "tag_mag_attach",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+    {
         PrintName = "Ammunition",
         Bone = "j_ammo_02",
         Category = "go_ammo",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "Perk",
+        Category = {"cod2019_perks","cod2019_perks_soh"}
     },
     {
         PrintName = "Charm",
