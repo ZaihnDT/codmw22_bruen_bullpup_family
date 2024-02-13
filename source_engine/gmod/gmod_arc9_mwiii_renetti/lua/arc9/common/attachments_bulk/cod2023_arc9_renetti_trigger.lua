@@ -31,7 +31,7 @@ ATT.Icon = Material("entities/mw23_mike93_attachments/icon_attachment_vm_jup_pi_
 
 ATT.SortOrder = 1
 ATT.Category = "cod2023_renetti_trigger"
-ATT.ActivateElements = {"triggerhvy"}
+ATT.ActivateElements = {"triggerheavy"}
 
 ATT.RPMMult = 0.8
 ATT.RecoilMult = 0.85
