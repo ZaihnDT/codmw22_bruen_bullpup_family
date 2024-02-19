@@ -888,48 +888,70 @@ SWEP.Animations = {
 
 -------------------------- ATTACHMENTS
 
-SWEP.Hook_TranslateAnimation = function (wep, anim)
+local Translate_mag_50 = {
+    ["reload"] = "reload_drum",
+    ["reload_empty"] = "reload_drum_empty",
+    ["inspect"] = "inspect_drum",
+}
+local Translate_mag_30 = {
+    ["reload"] = "reload_xmag",
+    ["reload_empty"] = "reload_xmag_empty",
+}
+
+local Translate_mag_50_Fast = {
+    ["reload"] = "reload_drum_fast",
+    ["reload_empty"] = "reload_drum_fast_empty",
+    ["inspect"] = "inspect_drum",
+}
+local Translate_mag_30_Fast = {
+    ["reload"] = "reload_xmag_fast",
+    ["reload_empty"] = "reload_xmag_fast_empty",
+}
+local Translate_Fast = {
+    ["reload"] = "reload_fast",
+    ["reload_empty"] = "reload_fast_empty",
+}
+
+SWEP.Hook_TranslateAnimation = function(wep, anim)
     --local attached = self:GetElements()
 
-    --------------------------------------------------------------------------
-    if anim == "reload" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_24") then
-        return "reload_xmag_fast"
-    elseif anim == "reload_empty" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_24") then
-        return "reload_xmag_fast_empty"
-	--------------------------------------------------------------------------
-    elseif anim == "reload" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_30") then
-        return "reload_xmag_fast"
-    elseif anim == "reload_empty" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_30") then
-        return "reload_xmag_fast_empty"
-	--------------------------------------------------------------------------
-    elseif anim == "reload" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_50") then
-        return "reload_drum_fast"
-    elseif anim == "reload_empty" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_50") then
-        return "reload_drum_fast_empty"
-	--------------------------------------------------------------------------
-    elseif anim == "reload" and wep:HasElement("perk_speedreload") then
-        return "reload_fast"
-    elseif anim == "reload_empty" and wep:HasElement("perk_speedreload") then
-        return "reload_fast_empty"
-	--------------------------------------------------------------------------
-    elseif anim == "reload" and wep:HasElement("mag_24") then
-        return "reload_xmag"
-    elseif anim == "reload_empty" and wep:HasElement("mag_24") then
-        return "reload_xmag_empty"
-	--------------------------------------------------------------------------
-    elseif anim == "reload" and wep:HasElement("mag_30") then
-        return "reload_xmag"
-    elseif anim == "reload_empty" and wep:HasElement("mag_30") then
-        return "reload_xmag_empty"
-	--------------------------------------------------------------------------
-    elseif anim == "reload" and wep:HasElement("mag_50") then
-        return "reload_drum"
-    elseif anim == "reload_empty" and wep:HasElement("mag_50") then
-        return "reload_drum_empty"
-	--------------------------------------------------------------------------
-    elseif anim == "inspect" and wep:HasElement("mag_50") then
-        return "inspect_drum"
-	--------------------------------------------------------------------------
+    local speedload = wep:HasElement("perk_speedreload")
+    local mag_50 = wep:HasElement("mag_50")
+    local mag_30 = wep:HasElement("mag_30")
+    local mag_24 = wep:HasElement("mag_24")
+
+    if speedload then
+        if mag_50 then
+            if Translate_mag_50_Fast[anim] then
+                return Translate_mag_50_Fast[anim]
+            end
+        elseif mag_30 then
+            if Translate_mag_30_Fast[anim] then
+                return Translate_mag_30_Fast[anim]
+            end
+        elseif mag_24 then
+            if Translate_mag_30_Fast[anim] then
+                return Translate_mag_30_Fast[anim]
+            end
+        else
+            if Translate_Fast[anim] then
+                return Translate_Fast[anim]
+            end
+        end
+    else
+        if mag_24 then
+            if Translate_mag_30[anim] then
+                return Translate_mag_30[anim]
+            end
+        elseif mag_30 then
+            if Translate_mag_30[anim] then
+                return Translate_mag_30[anim]
+            end
+        elseif mag_50 then
+            if Translate_mag_50[anim] then
+                return Translate_mag_50[anim]
+            end
+        end
     end
 end
 
