@@ -1122,36 +1122,61 @@ SWEP.AttachmentElements = {
     },
 }
 
-SWEP.Hook_TranslateAnimation = function (wep, anim)
+local Translate_XMag = {
+    ["reload"] = "reload_xmag",
+    ["reload_empty"] = "reload_xmag_empty",
+}
+local Translate_SMag = {
+    ["reload"] = "reload_smag",
+    ["reload_empty"] = "reload_smag_empty",
+    ["inspect"] = "inspect_smag",
+}
+
+local Translate_XMag_Fast = {
+    ["reload"] = "reload_xmag_fast",
+    ["reload_empty"] = "reload_xmag_fast_empty",
+}
+local Translate_SMag_Fast = {
+    ["reload"] = "reload_smag_fast",
+    ["reload_empty"] = "reload_empty_smag_fast",
+    ["inspect"] = "inspect_smag",
+}
+local Translate_Fast = {
+    ["reload"] = "reload_fast",
+    ["reload_empty"] = "reload_fast_empty",
+}
+
+SWEP.Hook_TranslateAnimation = function(wep, anim)
     --local attached = self:GetElements()
 
-    if anim == "reload" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_xmag") then
-        return "reload_xmag_fast"
-    elseif anim == "reload_empty" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_xmag") then 
-        return "reload_xmag_fast_empty"
---------------------------------------------------------------------------
-    elseif anim == "reload" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_smag") then
-        return "reload_smag_fast"
-    elseif anim == "reload_empty" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_smag") then 
-        return "reload_empty_smag_fast"
---------------------------------------------------------------------------
-    elseif anim == "reload" and wep:HasElement("mag_xmag") then 
-        return "reload_xmag"
-    elseif anim == "reload_empty" and wep:HasElement("mag_xmag") then 
-        return "reload_xmag_empty"
---------------------------------------------------------------------------
-    elseif anim == "reload" and wep:HasElement("perk_speedreload") then 
-        return "reload_fast"
-    elseif anim == "reload_empty" and wep:HasElement("perk_speedreload") then 
-        return "reload_fast_empty"
---------------------------------------------------------------------------
-    elseif anim == "reload" and wep:HasElement("mag_smag") then 
-        return "reload_smag"
-    elseif anim == "reload_empty" and wep:HasElement("mag_smag") then 
-        return "reload_smag_empty"
---------------------------------------------------------------------------
-    elseif anim == "inspect" and wep:HasElement("mag_smag") then 
-        return "inspect_smag"
+    local speedload = wep:HasElement("perk_speedreload")
+    local xmag = wep:HasElement("mag_xmag")
+    local smag = wep:HasElement("mag_smag")
+
+    if speedload then
+        if xmag then
+            if Translate_XMag_Fast[anim] then
+                return Translate_XMag_Fast[anim]
+            end
+        elseif smag then
+            if Translate_SMag_Fast[anim] then
+                return Translate_SMag_Fast[anim]
+            end
+        else
+            if Translate_Fast[anim] then
+                return Translate_Fast[anim]
+            end
+        end
+    else
+        if xmag then
+            if Translate_XMag[anim] then
+                return Translate_XMag[anim]
+            end
+        elseif smag then
+            if Translate_SMag[anim] then
+                return Translate_SMag[anim]
+            end
+        end
     end
 end
 
@@ -1172,7 +1197,7 @@ SWEP.Attachments = {
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
-        Category = {"cod2022_aug_muzzle", "cod2019_aug_muzzle"},
+        Category = {"cod2022_aug_muzzle", "cod2019_muzzle"},
         Bone = "tag_silencer",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
