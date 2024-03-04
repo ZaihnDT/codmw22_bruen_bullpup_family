@@ -21,6 +21,7 @@ $bodygroup "muzzle"
 	studio "barlght_tip.smd"
 	studio "barlong_tip.smd"
 	blank
+	studio "hbar_barhvy_tip.smd"
 }
 
 $bodygroup "barrel"
@@ -30,6 +31,8 @@ $bodygroup "barrel"
 	studio "barlght.smd"
 	studio "barlong.smd"
 	studio "barsn.smd"
+	studio "barsil.smd"
+	studio "hbar_barhvy.smd"
 }
 
 $bodygroup "sight"
@@ -48,7 +51,8 @@ $bodygroup "mag"
 $bodygroup "stock"
 {
 	studio "stock.smd"
-	blank
+	studio "stock_ahotel.smd"
+	studio "stock_apapa.smd"
 }
 
 $bodygroup "mount_laser"
@@ -77,6 +81,14 @@ $bodygroup "rack"
 	studio "combammo.smd"
 	studio "combhvy.smd"
 	studio "combtac.smd"
+}
+
+$bodygroup "ammo"
+{
+	studio "556n.smd"
+	studio "556n_fn.smd"
+	studio "556n_hp.smd"
+	studio "556n_ap.smd"
 }
 
 // C Hands Bones
