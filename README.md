@@ -1,4 +1,4 @@
-![Bruen logo here](assets/images/logo_bruen.png)
+![Bruen logo here](assets/images/bruen_logo_transparent.png)
 
 # The main addon description is written below:
 
