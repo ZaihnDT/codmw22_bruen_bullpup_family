@@ -93,6 +93,8 @@
 
 ![Screenshot of MX9](assets/gallery/apapa.jpg)
 
+---
+
 ![Screenshot of Kastov 762](assets/gallery/akilo.jpg)
 
 ![Screenshot of Kastov 545](assets/gallery/akilo105.jpg)
@@ -101,21 +103,29 @@
 
 ![Screenshot of Minibak](assets/gallery/beta.jpg)
 
+---
+
 ![Screenshot of X12](assets/gallery/golf17.jpg)
 
 ![Screenshot of X13](assets/gallery/golf18.jpg)
 
 ![Screenshot of X12 3D-print](assets/gallery/golf21_plastic.jpg)
 
+---
+
 ![Screenshot of P890](assets/gallery/papa220.jpg)
 
 ![Screenshot of Renetti](assets/gallery/mike93.jpg)
+
+---
 
 ![Screenshot of TAQ-M](assets/gallery/scromeo.jpg)
 
 ![Screenshot of LM-S](assets/gallery/pgolf1.jpg)
 
 ![Screenshot of LA-B 330](assets/gallery/la700.jpg)
+
+---
 
 ![Screenshot of BAS-B](assets/gallery/xmike5.jpg)
 
