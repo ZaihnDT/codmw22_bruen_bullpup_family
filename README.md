@@ -26,6 +26,7 @@
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/C0C4506HF)
 
+[![Workshop](https://community.cloudflare.steamstatic.com/public/images/sharedfiles/banner_browse_workshop.jpg)](https://steamcommunity.com/id/zaihndt/myworkshopfiles)
 ---
 
 ### [MWB] This attachment pack adds all STB 556, MX9 and HCR 56 parts to MW19 AUG. You can only use those together, please don't try to break this system. You can use attachments such as Lasers, Grips, Sights and Muzzle Devices from MWXIX though.
