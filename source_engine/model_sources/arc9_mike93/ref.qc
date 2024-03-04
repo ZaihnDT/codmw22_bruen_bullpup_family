@@ -42,6 +42,9 @@ $bodygroup "mag"
 $bodygroup "ammo"
 {
 	studio "9p"
+	studio "9p_fn"
+	studio "9p_hp"
+	studio "9p_ap"
 }
 
 
