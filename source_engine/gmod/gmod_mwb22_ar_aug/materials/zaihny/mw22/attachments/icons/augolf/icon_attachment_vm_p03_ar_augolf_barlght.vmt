@@ -1,8 +1,0 @@
-"UnlitGeneric"
-{
-	"$basetexture" "zaihny/mw22/attachments/icons/augolf/icon_attachment_vm_p03_ar_augolf_barlght"
-	"$nolod" 1
-	"$vertexalpha" 1
-	"$vertexcolor" 1
-	"$translucent" "1"
-}
