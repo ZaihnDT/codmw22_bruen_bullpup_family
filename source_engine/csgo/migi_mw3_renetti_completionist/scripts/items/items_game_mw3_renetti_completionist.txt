@@ -1,0 +1,104 @@
+"items_game"
+{
+	"prefabs"
+	{
+		"weapon_fiveseven_prefab"
+		{
+			"prefab"		"secondary"
+			"item_class"		"weapon_deagle"
+			"item_name"		"Renetti"
+			"item_description"		"A semi-auto pistol with a staggering fire rate and controllability in the right hands."
+			"image_inventory"		"econ/weapons/base_weapons/weapon_fiveseven"
+			"model_player"		"models/weapons/v_pist_fiveseven.mdl"
+			"model_world"		"models/weapons/w_pist_fiveseven.mdl"
+			"model_dropped"		"models/weapons/w_pist_fiveseven_dropped.mdl"
+			"icon_default_image"		"materials/icons/inventory_icon_weapon_fiveseven.vtf"
+			"stickers"
+			{
+			}
+			"used_by_classes"
+			{
+				"counter-terrorists"		"1"
+			}
+			"attributes"
+			{
+				"magazine model"		"models/weapons/w_pist_fiveseven_mag.mdl"
+				"primary reserve ammo max"		"120"
+				"inaccuracy jump initial"		"99.879997"
+				"inaccuracy jump"		"89.699997"
+				"heat per shot"		"0.300000"
+				"tracer frequency"		"1"
+				"max player speed"		"240"
+				"in game price"		"500"
+				"armor ratio"		"1.823000"
+				"crosshair min distance"		"8"
+				"penetration"		"1"
+				"damage"		"32"
+				"range"		"4096"
+				"range modifier"		"0.810000"
+				"flinch velocity modifier large"		"0.500000"
+				"flinch velocity modifier small"		"0.650000"
+				"spread"		"2.000000"
+				"inaccuracy crouch"		"6.830000"
+				"inaccuracy stand"		"9.100000"
+				"inaccuracy land"		"0.190000"
+				"inaccuracy ladder"		"138.000000"
+				"inaccuracy fire"		"25"
+				"inaccuracy move"		"40"
+				"recovery time crouch"		"0.200000"
+				"recovery time stand"		"0.200000"
+				"recoil angle"		"0"
+				"recoil angle variance"		"5"
+				"recoil magnitude"		"25"
+				"recoil magnitude variance"		"4"
+				"recoil seed"		"33244"
+				"primary clip size"		"15"
+				"weapon weight"		"5"
+				"rumble effect"		"1"
+				"inaccuracy crouch alt"		"6.830000"
+				"inaccuracy fire alt"		"32.450001"
+				"inaccuracy jump alt"		"89.699997"
+				"inaccuracy ladder alt"		"138.000000"
+				"inaccuracy land alt"		"0.190000"
+				"inaccuracy move alt"		"13.410000"
+				"inaccuracy stand alt"		"9.100000"
+				"max player speed alt"		"240"
+				"recoil angle alt"		"0"
+				"recoil angle variance alt"		"5"
+				"recoil magnitude alt"		"25"
+				"recoil magnitude variance alt"		"4"
+				"recovery time crouch final"		"0.500000"
+				"recovery time stand final"		"0.500000"
+				"spread alt"		"2.000000"
+				"recovery transition start bullet"		"0"
+				"recovery transition end bullet"		"5"
+			}
+			"inventory_image_data"
+			{
+				"camera_offset"		"1.0 1.0 -1.3"
+				"camera_fov"		"55.000000"
+				"point_light_accent"
+				{
+					"position"		"40 30 10"
+					"color"		"1 1 1"
+				}
+			}
+			"paint_data"
+			{
+			}
+			"visuals"
+			{
+				"muzzle_flash_effect_1st_person"		"weapon_muzzle_flash_pistol"
+				"muzzle_flash_effect_3rd_person"		"weapon_muzzle_flash_pistol"
+				"heat_effect"		"weapon_muzzle_smoke"
+				"eject_brass_effect"		"weapon_shell_casing_9mm"
+				"tracer_effect"		"weapon_tracers_pistol"
+				"weapon_type"		"Pistol"
+				"player_animation_extension"		"pistol"
+				"primary_ammo"		"BULLET_PLAYER_57MM"
+				"sound_single_shot"		"Weapon_FiveSeven.Single"
+				"sound_nearlyempty"		"Default.nearlyempty"
+			}
+		}
+	}
+}
