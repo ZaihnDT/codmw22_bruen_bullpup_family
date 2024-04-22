@@ -1,0 +1,4 @@
+$ikchain rhand "j_wrist_ri" knee 0.707 0.707 0
+$ikchain lhand "j_wrist_le" knee 0.707 0.707 0
+
+
