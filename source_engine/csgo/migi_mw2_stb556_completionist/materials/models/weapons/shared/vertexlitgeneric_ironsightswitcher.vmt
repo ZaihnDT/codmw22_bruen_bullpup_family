@@ -1,0 +1,37 @@
+"VertexLitGeneric"
+{
+	// =====================================================
+	// Handles making the gun disappear when zooming
+	// because Valve hardcoded gun positions on ironsights.
+	// Use the Patch "shader" and include this file.
+	// =====================================================
+	
+	// ---------------------
+	// Override:
+		
+		$ironsight_switch 0.95 	// when should we switch?
+		$ironsight_value_in 0 	// visible when zoomed in?
+		$ironsight_value_out 1	// visible when zoomed out?
+		
+	// ---------------------
+	
+	$basetexture "tools/black"
+	$cloakpassenabled 1
+	$ironsight 0
+	Proxies
+	{
+		IronSightAmount
+		{
+			resultVar	$ironsight
+			invert		0
+		}
+		LessOrEqual
+		{
+			srcVar1			$ironsight
+			srcVar2			$ironsight_switch
+			resultVar		$cloakfactor
+			greaterVar		$ironsight_value_out
+			lessEqualVar	$ironsight_value_in
+		}
+	}
+}
