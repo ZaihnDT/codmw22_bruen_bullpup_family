@@ -1,0 +1,168 @@
+$ikchain rhand "j_wrist_ri" knee 0.707 0.707 0
+$ikchain lhand "j_wrist_le" knee 0.707 0.707 0
+
+$animation a_walk_idle_to_sub "anims\walk_idle.smd"
+$animation a_walk_to_sub "anims\walk_loop.smd"
+$animation a_walk_idle "anims\walk_idle.smd" subtract a_walk_idle_to_sub 0
+$animation a_walk "anims\walk_loop.smd" subtract a_walk_to_sub 0
+
+$animation a_jog_idle_to_sub "anims\jog_idle.smd"
+$animation a_jog_to_sub "anims\jog_loop.smd"
+$animation a_move_idle "anims\jog_idle.smd" subtract a_jog_idle_to_sub 0
+$animation a_move "anims\jog_loop.smd" subtract a_jog_to_sub 0
+
+$animation a_idle_static_sub "anims\idle_static.smd"
+$animation a_idle_active_sub "anims\idle_active.smd"
+$animation a_idle_active "anims\idle_static.smd" subtract a_idle_static_sub 0
+$animation a_idle_static "anims\idle_active.smd" subtract a_idle_active_sub 0
+
+$sequence "blend_walk" {
+	a_walk_idle
+	a_walk
+	blendwidth 2
+	blend blend_walk 0 1
+	delta
+	realtime
+	hidden
+}
+
+$sequence "blend_move" {
+	a_move_idle
+	a_move
+	blendwidth 2
+	blend blend_move 0 1
+	delta
+	realtime
+	hidden
+}
+
+$sequence "blend_idle" {
+	a_idle_active
+	a_idle_static
+	blendwidth 2
+	blend blend_idle 1 0
+	delta
+	realtime
+	hidden
+}
+
+//      SPRINT IN
+
+// To Sub
+$animation sprint_in_to_sub "anims\walk_to_super_sprint.smd"
+
+// Delta
+$sequence "a_walk_to_sprint" {
+	"anims\walk_to_super_sprint.smd"
+	subtract sprint_in_to_sub 0
+	delta
+	hidden
+}
+
+// Sequence
+$sequence "sprint_in" {
+	"anims\idle.smd" //this is one frame so fps 1 is 1 second
+	fps 3.5 //30 divided by the number of frames of a_jog_to_walk
+	addlayer "a_walk_to_sprint"
+	addlayer "blend_move"
+	addlayer "blend_walk"
+	addlayer "blend_idle"
+	addlayer "empty"
+	ikrule rhand touch "j_gun_r" usesource
+    ikrule lhand touch "tag_sling_l" usesource
+	//origin 0 2.5 0
+}
+
+//     SPRINT OUT
+
+// To Sub
+$animation sprint_out_to_sub "anims\super_sprint_to_walk.smd"
+
+// Delta
+$sequence "a_sprint_to_walk" {
+	"anims\super_sprint_to_walk.smd"
+	subtract sprint_out_to_sub 14
+	delta
+	hidden
+}
+
+// Sequence
+$sequence "sprint_out" {
+	"anims\idle.smd" //this is one frame so fps 1 is 1 second
+	fps 2.25 //30 divided by the number of frames of a_jog_to_walk
+	addlayer "a_sprint_to_walk"
+	addlayer "blend_move"
+	addlayer "blend_walk"
+	addlayer "blend_idle"
+	addlayer "empty"
+	ikrule rhand touch "j_gun_r" usesource
+    ikrule lhand touch "tag_sling_l" usesource
+}
+
+//      SPRINT LOOP
+
+//To Sub animation
+$animation sprint_loop_to_sub "anims\super_sprint_loop.smd"
+
+// Delta
+$sequence "sprint_loop" {
+	"anims\super_sprint_loop.smd"
+	subtract sprint_loop_to_sub 0
+	delta
+	hidden
+}
+
+// Sequence
+$sequence "sprint" {
+	"anims\idle.smd" //this is one frame so fps 1 is 1 second
+	fps 0.5
+	fadein 0.2
+	fadeout 0.2
+	//addlayer "blend_move"
+	addlayer "blend_walk"
+	addlayer "sprint_loop"
+	addlayer "sprint_offset"
+	addlayer "blend_idle"
+	addlayer "empty"
+	ikrule rhand touch "j_gun_r" usesource
+	ikrule lhand touch "tag_sling_l" usesource
+	//origin 0 5 0
+}
+
+// To Sub offset
+$animation sprint_offset_to_sub "anims\super_sprint_to_walk.smd"
+$animation sprint_idle_to_sub "anims\idle.smd"
+$animation a_sprint_offset_idle "anims\idle.smd" fps 0.416 subtract sprint_idle_to_sub 0
+$animation a_sprint_offset "anims\super_sprint_offset_additive.smd" fps 30 subtract sprint_offset_to_sub 14
+
+// Delta
+$sequence "sprint_offset" {
+	a_sprint_offset_idle
+	a_sprint_offset
+	blendwidth 2
+	blend sprint_offset 1 0
+	delta
+	realtime
+	hidden
+}
+
+//      EMPTY ADDITIVE
+
+// To Sub
+$animation empty_idle_to_sub "anims\idle.smd"
+// Subbed
+$animation a_empty_idle_to_sub "anims\idle.smd" subtract empty_idle_to_sub 0
+$animation a_delta_empty_additive_for_offset "anims\empty_additive.smd" frames 1 1 subtract empty_idle_to_sub 0
+$animation a_delta_empty_additive_for_offset2 "anims\empty_additive.smd" frames 2 2 subtract empty_idle_to_sub 0
+
+// Delta
+$sequence "empty" {
+	a_empty_idle_to_sub
+	a_delta_empty_additive_for_offset
+	a_delta_empty_additive_for_offset2
+	blendwidth 3
+	blend "empty" 0 2
+	delta
+	realtime
+	hidden
+}
