@@ -1,0 +1,78 @@
+$ikchain rhand "j_wrist_ri" knee 0.707 0.707 0
+$ikchain lhand "j_wrist_le" knee 0.707 0.707 0
+
+$animation a_walk_idle_to_sub "anims\walk_idle.smd"
+$animation a_walk_to_sub "anims\walk_loop.smd"
+$animation a_walk_idle "anims\walk_idle.smd" subtract a_walk_idle_to_sub 0
+$animation a_walk "anims\walk_loop.smd" subtract a_walk_to_sub 0
+
+$animation a_jog_idle_to_sub "anims\jog_idle.smd"
+$animation a_jog_to_sub "anims\jog_loop.smd"
+$animation a_move_idle "anims\jog_idle.smd" subtract a_jog_idle_to_sub 0
+$animation a_move "anims\jog_loop.smd" subtract a_jog_to_sub 0
+
+$sequence "blend_walk" {
+	a_walk_idle
+	a_walk
+	blendwidth 2
+	blend blend_walk 0 1
+	delta
+	realtime
+	hidden
+}
+
+$sequence "blend_move" {
+	a_move_idle
+	a_move
+	blendwidth 2
+	blend blend_move 0 1
+	delta
+	realtime
+	hidden
+}
+
+//      EMPTY ADDITIVE
+
+// To Sub
+$animation empty_idle_to_sub "anims\idle.smd"
+// Subbed
+$animation a_empty_idle_to_sub "anims\idle.smd" subtract empty_idle_to_sub 0
+$animation a_delta_empty_additive_for_offset "anims\reload_empty.smd" frames 0 0 subtract empty_idle_to_sub 0
+
+// Delta
+$sequence "empty" {
+	a_empty_idle_to_sub
+	a_delta_empty_additive_for_offset
+	blendwidth 2
+	blend "empty" 0 1
+	delta
+	realtime
+	hidden
+}
+
+//      DRYFIRE
+
+// To Sub
+$animation dryfire_to_sub "anims\iw8_vm_default_land.smd"
+
+// Delta
+$sequence "a_dryfire" {
+	"anims\iw8_vm_default_land.smd" 
+	subtract dryfire_to_sub 22
+	delta
+	hidden
+}
+
+// Sequence
+$sequence "dryfire" {
+	"anims\idle.smd" //this is one frame so fps 1 is 1 second
+	fps 1.363 //30 divided by the number of frames of jump_land
+	addlayer "a_dryfire"
+	addlayer "blend_move"
+	addlayer "blend_walk"
+	addlayer "empty"
+	fadein 0.3
+	fadeout 0.3
+	ikrule rhand touch "tag_sling" usesource
+    ikrule lhand touch "tag_sling" usesource
+}
