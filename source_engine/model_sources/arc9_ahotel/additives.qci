@@ -1,0 +1,32 @@
+$ikchain rhand "j_wrist_ri" knee 0.707 0.707 0
+$ikchain lhand "j_wrist_le" knee 0.707 0.707 0
+
+$animation a_walk_idle_to_sub "anims\a_walk_idle_to_sub.smd"
+$animation a_walk_to_sub "anims\a_walk_to_sub.smd"
+$animation a_walk_idle "anims\a_walk_idle_to_sub.smd" subtract a_walk_idle_to_sub 0
+$animation a_walk "anims\a_walk_to_sub.smd" subtract a_walk_to_sub 0
+
+$animation a_jog_idle_to_sub "anims\a_jog_idle_to_sub.smd"
+$animation a_jog_to_sub "anims\a_jog_to_sub.smd"
+$animation a_move_idle "anims\a_jog_idle_to_sub.smd" subtract a_jog_idle_to_sub 0
+$animation a_move "anims\a_jog_to_sub.smd" subtract a_jog_to_sub 0
+
+$sequence "blend_walk" {
+	a_walk_idle
+	a_walk
+	blendwidth 2
+	blend blend_walk 0 1
+	delta
+	realtime
+	hidden
+}
+
+$sequence "blend_move" {
+	a_move_idle
+	a_move
+	blendwidth 2
+	blend blend_move 0 1
+	delta
+	realtime
+	hidden
+}
