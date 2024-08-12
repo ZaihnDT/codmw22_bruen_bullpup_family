@@ -119,6 +119,8 @@
 
 ![Screenshot of Renetti](assets/gallery/mike93.jpg)
 
+![Screenshot of Daemon](assets/gallery/mike2011.jpg)
+
 ---
 
 ![Screenshot of TAQ-M](assets/gallery/scromeo.jpg)
