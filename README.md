@@ -135,4 +135,6 @@
 
 ![Screenshot of Mk18](assets/gallery/mike18.jpg)
 
+![Screenshot of Holger 556](assets/gallery/golf36.jpg)
+
 ---
