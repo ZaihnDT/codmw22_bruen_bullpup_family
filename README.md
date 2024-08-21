@@ -121,6 +121,8 @@
 
 ![Screenshot of Daemon](assets/gallery/mike2011.jpg)
 
+![Screenshot of Daemon](assets/gallery/decho.jpg)
+
 ---
 
 ![Screenshot of TAQ-M](assets/gallery/scromeo.jpg)
