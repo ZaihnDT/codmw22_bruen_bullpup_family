@@ -139,6 +139,8 @@
 
 ![Screenshot of Holger 556](assets/gallery/golf36.jpg)
 
+![Screenshot of FR 5.56](assets/gallery/falpha.jpg)
+
 ---
 
 
@@ -148,5 +150,5 @@
 ![Screenshot of AS-VAL](assets/gallery/asvalor.jpg)
 
 ![Screenshot of Colt 723](assets/gallery/coslo723.jpg)
-![Screenshot of FR 5.56](assets/gallery/falpha.jpg)
+
 ---
