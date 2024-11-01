@@ -151,4 +151,6 @@
 
 ![Screenshot of Colt 723](assets/gallery/coslo723.jpg)
 
+![Screenshot of KSV](assets/gallery/sroger3.jpg)
+
 ---
