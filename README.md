@@ -155,4 +155,6 @@
 
 ![Screenshot of SWAT 5.56](assets/gallery/sgeorge550.jpg)
 
+![Screenshot of Grekhova](assets/gallery/stiger.jpg)
+
 ---
