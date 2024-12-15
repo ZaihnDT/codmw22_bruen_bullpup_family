@@ -157,4 +157,6 @@
 
 ![Screenshot of Grekhova](assets/gallery/stiger.jpg)
 
+![Screenshot of Hand Cannon](assets/gallery/hand_cannon.jpg)
+
 ---
